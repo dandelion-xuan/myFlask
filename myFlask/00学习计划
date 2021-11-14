@@ -1,0 +1,10 @@
+1、myFlask接入log——未完成，尝试未成功，单页成功，项目不成功
+2、route endpoint用法
+3、url_for用法
+4、某个页面统一url前缀
+5、flask Excel读写处理
+    如果文件不存在，则写入，如果存在，则追加——未完成
+    使用pyexcel模块处理，文件pyexcelTest.py，测试数据：data\excelTestData文件——done at 2021/11/14 22:48
+6、flask发企业微信机器人
+7、flask 连接mysql
+9、写入、读取文件，路径问题
