@@ -3,7 +3,7 @@
 3、url_for用法
 4、某个页面统一url前缀
 5、flask Excel读写处理
-    如果文件不存在，则写入，如果存在，则追加——未完成
+    如果文件不存在，则写入，如果存在，则追加——未完成,换种解决思路，先读取后重新赋值
     使用pyexcel模块处理，文件pyexcelTest.py，测试数据：data\excelTestData文件——done at 2021/11/14 22:48
 6、flask发企业微信机器人
 7、flask 连接mysql——done 2021/11/18 21:21
