@@ -18,6 +18,10 @@ from flask import request, jsonify
 def hello():
     print(request.url)
     res = {"result": "in func hello", "code": 0}
+    app.logger.info('req:')
+    app.logger.debug("debug")
+    app.logger.warning("warming")
+    app.logger.error("error!")
     return jsonify(res)
 
 def index():

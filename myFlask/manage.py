@@ -6,16 +6,16 @@
 # @File    : manage.py
 # @Software: PyCharm
 
-from server.server import app
+from server.server import app,logging_handler
 import flask_excel as excel
-from api import transferTest, routeTest, flaskExcelTest, pyexcelXlsxTest, logTest, pyexcelTest
-import logging
+from api import routeTest
+
 
 if __name__ == '__main__':
     excel.init_excel(app)
-    handler = logging.FileHandler('say.log')
-    app.logger.addHandler(handler)
-    app.logger.info("hello")
+    app.logger.addHandler(logging_handler)
+
+
     app.run(
         host='127.0.0.1',
         port=8889,
