@@ -24,11 +24,12 @@ def compileProto():
     testLogger.info("编译proto文件开始。。。。。")
     try:
         for file in files:
-            cmdStr = "python -m grpc_tools.protoc -I%s --python_out=%s --grpc_python_out=%s %s\%s" % (mktTmpDir,mktTmpDir,mktTmpDir,mktTmpDir,file)
-            # testLogger.debug(cmdStr)
-            p = os.popen(cmdStr)
-            f = p.read()
-            testLogger.info(f)
+            if file.split('.')[1] == 'proto':
+                cmdStr = "python -m grpc_tools.protoc -I%s --python_out=%s --grpc_python_out=%s %s\%s" % (mktTmpDir,mktTmpDir,mktTmpDir,mktTmpDir,file)
+                # testLogger.debug(cmdStr)
+                p = os.popen(cmdStr)
+                f = p.read()
+                testLogger.info(f)
         testLogger.info("编译proto文件结束")
     except Exception as err:
         testLogger.error(err)
