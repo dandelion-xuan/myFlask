@@ -1,9 +1,10 @@
 1、myFlask接入log
 ——未完成，尝试未成功，单页成功，项目不成功
 ——2021/12/2 23:22 在项目中简单使用已完成
-1.1 指定目录，以日期或月生成文件
+1.1 指定目录，以日期或月生成文件——done,https://www.cnblogs.com/yyds/p/6901864.html
 1.2 全局配置，不使用app.logger
 1.3 代码可读性，位置规划
+1.4 指定编码格式，处理中文字符问题——done,https://www.cnblogs.com/TurboWay/p/9304024.html
 2、route endpoint用法
 3、url_for用法
 4、某个页面统一url前缀
@@ -13,3 +14,4 @@
 6、flask发企业微信机器人
 7、flask 连接mysql——done 2021/11/18 21:21
 9、写入、读取文件，路径问题——done at 2021/11/18 22:34,D:\\code\\myFlask\\config\\__init__.py
+10、python 执行cmd命令

@@ -1,0 +1,4 @@
+2021-12-03 13:16:18,608 - ERROR - testLogger.py[:34] - error message
+2021-12-03 13:16:18,608 - CRITICAL - testLogger.py[:35] - critical message
+2021-12-03 13:16:29,988 - ERROR - testLogger.py[:34] - error message
+2021-12-03 13:16:29,988 - CRITICAL - testLogger.py[:35] - critical message
