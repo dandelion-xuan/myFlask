@@ -6,9 +6,10 @@
 # @File    : manage.py
 # @Software: PyCharm
 
-from server.server import app,logging_handler
 import flask_excel as excel
-from api import routeTest
+
+from server.server import app,logging_handler
+from api import logTest
 
 
 if __name__ == '__main__':
