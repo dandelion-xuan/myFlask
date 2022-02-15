@@ -7,13 +7,8 @@
 # @Software: PyCharm
 
 from flask import Flask
-from flask_cors import CORS
 import logging
-
-# CORS(app, supports_credentials=True)
-
-import logging
-from logging.handlers import RotatingFileHandler
+# from api.blueprintTest import simpleLogBP
 
 # 默认日志等级的设置
 logging.basicConfig(level=logging.DEBUG)
@@ -24,3 +19,4 @@ logging_handler.setFormatter(logging_format)
 
 app = Flask(__name__)
 
+# app.register_blueprint(simpleLogBP)

@@ -12,3 +12,5 @@
 2021-12-02 23:04:55,630 - ERROR - routeTest.py - hello - 24 - error!
 2022-02-13 17:02:52,517 - DEBUG - logTest.py - printLog - 17 - http://127.0.0.1:8889/log
 2022-02-13 17:02:52,517 - DEBUG - logTest.py - printLog - 18 - Info message
+2022-02-15 22:31:34,988 - DEBUG - logTest.py - printLog - 17 - http://127.0.0.1:8889/log
+2022-02-15 22:31:34,990 - DEBUG - logTest.py - printLog - 18 - Info message

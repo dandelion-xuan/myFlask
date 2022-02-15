@@ -1,0 +1,12 @@
+[2022-02-13 17:11:56,683] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-02-13 17:11:56,683] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-02-13 17:11:56,683] [logs/logTest-printLogger] [INFO]: info message
+[2022-02-13 17:20:59,684] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-02-13 17:20:59,684] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-02-13 17:20:59,684] [logs/logTest-printLogger] [INFO]: info message
+[2022-02-13 17:21:40,289] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-02-13 17:21:40,289] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-02-13 17:21:40,289] [logs/logTest-printLogger] [INFO]: info message
+[2022-02-13 17:35:35,075] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-02-13 17:35:35,075] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-02-13 17:35:35,075] [logs/logTest-printLogger] [INFO]: info message

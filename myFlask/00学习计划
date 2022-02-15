@@ -9,7 +9,9 @@
 
 2、route endpoint用法
 3、url_for用法
-4、某个页面统一url前缀
+4、某个页面统一url前缀——done 2022/2/15 23:12
+——应用模块化blueprint
+
 5、flask Excel读写处理
     如果文件不存在，则写入，如果存在，则追加——不打算完成,换种解决思路，先读取后重新赋值
     使用pyexcel模块处理，文件pyexcelTest.py，测试数据：data\excelTestData文件——done at 2021/11/14 22:48
