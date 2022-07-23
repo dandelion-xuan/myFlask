@@ -12,8 +12,9 @@ from flask import request
 from myFlask.server.server import app
 from myFlask.util.logger import Logger
 
-simpleLogBP = Blueprint('simple',__name__,url_prefix='/simpleLog')
-helloLogBP = Blueprint('hello',__name__,url_prefix='/helloLog')
+simpleLogBP = Blueprint('simple', __name__, url_prefix='/simpleLog')
+helloLogBP = Blueprint('hello', __name__, url_prefix='/helloLog')
+
 
 @simpleLogBP.route('/log')
 def simpleLog():
@@ -21,6 +22,7 @@ def simpleLog():
     app.logger.debug(request.url)
     app.logger.debug("Info message")
     return "ok"
+
 
 @helloLogBP.route('/log')
 def helloLog():

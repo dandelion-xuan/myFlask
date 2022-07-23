@@ -22,6 +22,7 @@ def transfer1():
     res = {"result": "json", "code": 0}
     return jsonify(res)
 
+
 @app.route('/transfer/args', methods=['GET'])
 def transfer2():
     """
@@ -30,13 +31,14 @@ def transfer2():
     @desc:       get请求，获取url后缀信息，返回json格式
     """
     req = request.args
-    print(req) #ImmutableMultiDict([('name', 'lixuan')])
+    print(req)  # ImmutableMultiDict([('name', 'lixuan')])
     req = request.args.to_dict()
-    print(req) #{'name': 'lixuan'}
+    print(req)  # {'name': 'lixuan'}
     res = {"result": "args", "code": 0}
     return jsonify(res)
 
-@app.route('/transfer/form', methods=['POST','GET'])
+
+@app.route('/transfer/form', methods=['POST', 'GET'])
 def transfer3():
     """
     @author:     xuan
@@ -44,7 +46,7 @@ def transfer3():
     @desc:       不限制请求方式，接收为form表单形式，返回json格式
     """
     req = request.form
-    print(req) #ImmutableMultiDict([('name', 'lixuan')])
-    print(req.get('name')) #lixuan
+    print(req)  # ImmutableMultiDict([('name', 'lixuan')])
+    print(req.get('name'))  # lixuan
     res = {"result": "form", "code": 0}
     return jsonify(res)

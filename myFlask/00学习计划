@@ -18,4 +18,5 @@
 6、flask发企业微信机器人
 7、flask 连接mysql——done 2021/11/18 21:21
 9、写入、读取文件，路径问题——done at 2021/11/18 22:34,D:\\code\\myFlask\\config\\__init__.py
-10、python 执行cmd命令
+10、python 执行cmd命令——done，at /test/cmdTest.py
+

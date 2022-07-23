@@ -14,3 +14,6 @@
 2022-02-13 17:02:52,517 - DEBUG - logTest.py - printLog - 18 - Info message
 2022-02-15 22:31:34,988 - DEBUG - logTest.py - printLog - 17 - http://127.0.0.1:8889/log
 2022-02-15 22:31:34,990 - DEBUG - logTest.py - printLog - 18 - Info message
+2022-07-23 17:06:08,870 - DEBUG - invest.py - add_product - 30 - None
+2022-07-23 17:09:30,792 - DEBUG - invest.py - add_product - 30 - hhhh
+2022-07-23 17:09:30,792 - DEBUG - invest.py - add_product - 31 - None

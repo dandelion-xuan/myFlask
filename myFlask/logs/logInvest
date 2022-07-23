@@ -1,0 +1,114 @@
+[2022-07-23 17:13:22,492] [logs/logInvest-add_product] [DEBUG]: None
+[2022-07-23 17:15:26,558] [logs/logInvest-add_product] [DEBUG]: {'productId': '', 'productName': '', 'productType': 0, 'amount': 10000.0}
+[2022-07-23 18:40:13,319] [logs/logInvest-add_product] [DEBUG]: {'productId': '11111', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-23 18:40:13,373] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 18:40:41,066] [logs/logInvest-add_product] [DEBUG]: {'productId': '11111', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-23 18:40:41,088] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 18:43:55,711] [logs/logInvest-add_product] [DEBUG]: {'productId': '11111', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-23 18:43:55,722] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 20:09:17,484] [logs/logInvest-add_product] [DEBUG]: {'productId': '11111', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-23 20:09:17,522] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 20:09:17,523] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 20:09:17,523] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 20:16:23,120] [logs/logInvest-query_product_profit] [DEBUG]: ((10000.0,),)
+[2022-07-23 20:28:18,371] [logs/logInvest-add_product] [DEBUG]: {'productId': '22222', 'productName': 'www', 'productType': 2, 'amount': 10000.99}
+[2022-07-23 20:28:18,398] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 20:28:18,398] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 20:28:18,398] [logs/logInvest-add_product] [DEBUG]: ()
+[2022-07-23 20:34:27,549] [logs/logInvest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 1, 'amount': 1000.99}
+[2022-07-23 20:34:27,551] [logs/logInvest-add_trade_record] [DEBUG]: None
+[2022-07-23 20:38:01,128] [logs/logInvest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 1, 'amount': 1000.99}
+[2022-07-23 20:38:01,130] [logs/logInvest-add_trade_record] [DEBUG]: None
+[2022-07-23 20:38:37,712] [logs/logInvest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 1, 'amount': 1000.99}
+[2022-07-23 20:38:37,717] [logs/logInvest-add_trade_record] [DEBUG]: ()
+[2022-07-23 20:40:04,400] [logs/logInvest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 1, 'amount': 100.99, 'tradeDate': '2022-06-23 20:09:17'}
+[2022-07-23 20:40:04,405] [logs/logInvest-add_trade_record] [DEBUG]: None
+[2022-07-23 20:41:47,541] [logs/logInvest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 1, 'amount': 100.99, 'tradeDate': '2022-06-23 20:09:17'}
+[2022-07-23 20:41:47,549] [logs/logInvest-add_trade_record] [DEBUG]: ()
+[2022-07-23 20:41:56,263] [logs/logInvest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 1, 'amount': 500.99}
+[2022-07-23 20:41:56,267] [logs/logInvest-add_trade_record] [DEBUG]: ()
+[2022-07-23 20:45:31,779] [logs/logInvest-query_product_profit] [DEBUG]: ((10000.99,),)
+[2022-07-23 20:49:16,356] [logs/logInvest-query_product_profit] [DEBUG]: ((10000.99,),)
+[2022-07-23 20:49:16,363] [logs/logInvest-query_product_profit] [DEBUG]: ((None,),)
+[2022-07-23 20:49:16,363] [logs/logInvest-query_product_profit] [DEBUG]: None
+[2022-07-23 20:50:12,896] [logs/logInvest-query_product_profit] [DEBUG]: ((10000.99,),)
+[2022-07-23 20:50:12,898] [logs/logInvest-query_product_profit] [DEBUG]: ((None,),)
+[2022-07-23 20:50:12,898] [logs/logInvest-query_product_profit] [DEBUG]: None
+[2022-07-23 20:51:10,151] [logs/logInvest-query_product_profit] [DEBUG]: ((10000.99,),)
+[2022-07-23 20:51:10,154] [logs/logInvest-query_product_profit] [DEBUG]: ()
+[2022-07-23 20:52:42,890] [logs/logInvest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 2, 'amount': 500}
+[2022-07-23 20:52:42,899] [logs/logInvest-add_trade_record] [DEBUG]: ()
+[2022-07-23 20:53:36,731] [logs/logInvest-add_trade_record] [DEBUG]: {'tradeDate': '2022-05-23 20:09:17', 'productId': '22222', 'productName': 'www', 'tradeType': 2, 'amount': 100}
+[2022-07-23 20:53:36,739] [logs/logInvest-add_trade_record] [DEBUG]: ()
+[2022-07-23 20:54:44,330] [logs/logInvest-query_product_profit] [DEBUG]: ((10000.99,),)
+[2022-07-23 20:54:44,330] [logs/logInvest-query_product_profit] [DEBUG]: ((600.0,),)
+[2022-07-23 20:54:44,331] [logs/logInvest-query_product_profit] [DEBUG]: 600.0
+[2022-07-23 21:00:11,174] [logs/logInvest-query_product_profit] [DEBUG]: ((10000.99,),)
+[2022-07-23 21:00:11,174] [logs/logInvest-query_product_profit] [DEBUG]: 获取已卖出金额
+[2022-07-23 21:00:11,176] [logs/logInvest-query_product_profit] [DEBUG]: ((600.0,),)
+[2022-07-23 21:00:11,176] [logs/logInvest-query_product_profit] [DEBUG]: 600.0
+[2022-07-23 21:00:11,176] [logs/logInvest-query_product_profit] [DEBUG]: 获取成本
+[2022-07-23 21:00:11,177] [logs/logInvest-query_product_profit] [DEBUG]: ((11603.96,),)
+[2022-07-23 21:00:11,177] [logs/logInvest-query_product_profit] [DEBUG]: 计算收益
+[2022-07-23 21:20:03,576] [logs/logInvest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-23 21:20:03,580] [logs/logInvest-query_product_profit] [INFO]: 10000.99
+[2022-07-23 21:20:03,580] [logs/logInvest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-23 21:22:30,688] [logs/logInvest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-23 21:22:30,692] [logs/logInvest-query_product_profit] [INFO]: 10000.99
+[2022-07-23 21:22:30,692] [logs/logInvest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-23 21:22:30,694] [logs/logInvest-query_product_profit] [INFO]: 0
+[2022-07-23 21:22:30,694] [logs/logInvest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-23 21:22:30,695] [logs/logInvest-query_product_profit] [INFO]: 600.0
+[2022-07-23 21:22:30,696] [logs/logInvest-query_product_profit] [INFO]: 获取成本
+[2022-07-23 21:22:30,696] [logs/logInvest-query_product_profit] [INFO]: 11603.96
+[2022-07-23 21:22:30,696] [logs/logInvest-query_product_profit] [INFO]: 计算收益
+[2022-07-23 21:22:30,697] [logs/logInvest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-23 22:15:46,762] [logs/logInvest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=1类型所有产品productId数组
+[2022-07-23 22:15:46,768] [logs/logInvest-query_product_type_profit] [INFO]: ['11111']
+[2022-07-23 22:15:46,768] [logs/logInvest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-23 22:15:46,768] [logs/logInvest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-23 22:15:46,769] [logs/logInvest-query_product_profit] [INFO]: 10000.0
+[2022-07-23 22:15:46,769] [logs/logInvest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-23 22:15:46,770] [logs/logInvest-query_product_profit] [INFO]: 0
+[2022-07-23 22:15:46,770] [logs/logInvest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-23 22:15:46,771] [logs/logInvest-query_product_profit] [INFO]: None
+[2022-07-23 22:15:46,771] [logs/logInvest-query_product_profit] [INFO]: 获取成本
+[2022-07-23 22:15:46,772] [logs/logInvest-query_product_profit] [INFO]: 10000.0
+[2022-07-23 22:15:46,772] [logs/logInvest-query_product_profit] [INFO]: 10000.0
+[2022-07-23 22:15:46,772] [logs/logInvest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-23 22:17:35,911] [logs/logInvest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=1类型所有产品productId数组
+[2022-07-23 22:17:35,912] [logs/logInvest-query_product_type_profit] [INFO]: ['11111']
+[2022-07-23 22:17:35,912] [logs/logInvest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-23 22:17:35,913] [logs/logInvest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-23 22:17:35,916] [logs/logInvest-query_product_profit] [INFO]: 10000.0
+[2022-07-23 22:17:35,916] [logs/logInvest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-23 22:17:35,917] [logs/logInvest-query_product_profit] [INFO]: 0
+[2022-07-23 22:17:35,917] [logs/logInvest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-23 22:17:35,919] [logs/logInvest-query_product_profit] [INFO]: 0
+[2022-07-23 22:17:35,919] [logs/logInvest-query_product_profit] [INFO]: 获取成本
+[2022-07-23 22:17:35,919] [logs/logInvest-query_product_profit] [INFO]: 10000.0
+[2022-07-23 22:17:35,920] [logs/logInvest-query_product_profit] [INFO]: 10000.0
+[2022-07-23 22:17:35,920] [logs/logInvest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-23 22:17:35,920] [logs/logInvest-query_product_profit] [INFO]: 0.0
+[2022-07-23 22:17:35,920] [logs/logInvest-query_product_profit] [INFO]: 0.0
+[2022-07-23 22:17:35,920] [logs/logInvest-query_product_type_profit] [INFO]: 0.0
+[2022-07-23 22:17:35,920] [logs/logInvest-query_product_type_profit] [INFO]: 10000.0
+[2022-07-23 22:17:35,920] [logs/logInvest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-23 22:18:07,262] [logs/logInvest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-23 22:18:07,264] [logs/logInvest-query_product_type_profit] [INFO]: ['22222']
+[2022-07-23 22:18:07,264] [logs/logInvest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-23 22:18:07,264] [logs/logInvest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-23 22:18:07,266] [logs/logInvest-query_product_profit] [INFO]: 10000.99
+[2022-07-23 22:18:07,266] [logs/logInvest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-23 22:18:07,267] [logs/logInvest-query_product_profit] [INFO]: 0
+[2022-07-23 22:18:07,267] [logs/logInvest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-23 22:18:07,268] [logs/logInvest-query_product_profit] [INFO]: 600.0
+[2022-07-23 22:18:07,268] [logs/logInvest-query_product_profit] [INFO]: 获取成本
+[2022-07-23 22:18:07,269] [logs/logInvest-query_product_profit] [INFO]: 11603.96
+[2022-07-23 22:18:07,269] [logs/logInvest-query_product_profit] [INFO]: 11603.96
+[2022-07-23 22:18:07,269] [logs/logInvest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-23 22:18:07,269] [logs/logInvest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-23 22:18:07,269] [logs/logInvest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-23 22:18:07,269] [logs/logInvest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-23 22:18:07,269] [logs/logInvest-query_product_type_profit] [INFO]: 11603.96
+[2022-07-23 22:18:07,269] [logs/logInvest-query_product_type_profit] [INFO]: 计算收益率

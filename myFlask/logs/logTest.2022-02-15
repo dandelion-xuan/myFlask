@@ -1,0 +1,6 @@
+[2022-02-15 22:47:48,760] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog/log
+[2022-02-15 22:47:48,762] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-02-15 22:47:48,762] [logs/logTest-printLogger] [INFO]: info message
+[2022-02-15 22:51:54,433] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
+[2022-02-15 22:51:54,433] [logs/logTest-helloLog] [DEBUG]: debug message
+[2022-02-15 22:51:54,433] [logs/logTest-helloLog] [INFO]: info message
