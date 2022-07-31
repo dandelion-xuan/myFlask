@@ -7,14 +7,14 @@
 # @Software: PyCharm
 import pymysql
 import time
-from myFlask.config import config
+from config import config
 from util.logger import Logger
 
 
 # from lib.logger import log
 # from lib.errors.expection import DatabaseError
 
-logger = Logger("logDB").getLogger()
+logger = Logger("logTest").getLogger()
 
 def connect_database():
     connect_time = 5

@@ -1,95 +1,28 @@
-[2022-07-23 18:43:55,712] [logs/logDB-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('11111','qqqq',1,1);
-[2022-07-23 18:43:55,716] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('11111', 'qqqq', current_time , '10000.000000', 1);
-[2022-07-23 18:43:55,720] [logs/logDB-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('11111', 'qqqq', '10000.000000', current_time);
-[2022-07-23 20:09:17,484] [logs/logDB-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('11111','qqqq',1,1);
-[2022-07-23 20:09:17,509] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('11111', 'qqqq', current_time , '10000.000000', 1);
-[2022-07-23 20:09:17,518] [logs/logDB-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('11111', 'qqqq', '10000.000000', current_time);
-[2022-07-23 20:16:23,113] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' order by id desc limit 1;
-[2022-07-23 20:28:18,371] [logs/logDB-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('22222','www',2,1);
-[2022-07-23 20:28:18,381] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:28:18,381] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '10000.990000', 1);
-[2022-07-23 20:28:18,388] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:28:18,388] [logs/logDB-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('22222', 'www', '10000.990000', current_time);
-[2022-07-23 20:28:18,398] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:34:27,550] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', '<class 'datetime.datetime'>' , '1000.990000', 1);
-[2022-07-23 20:34:27,551] [logs/logDB-execute] [ERROR]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'datetime.datetime'>' , '1000.990000', 1)' at line 1")
-[2022-07-23 20:38:01,128] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', 'current_time' , '1000.990000', 1);
-[2022-07-23 20:38:01,130] [logs/logDB-execute] [ERROR]: (1292, "Incorrect datetime value: 'current_time' for column 'trade_date' at row 1")
-[2022-07-23 20:38:37,713] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '1000.990000', 1);
-[2022-07-23 20:38:37,717] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:40:04,400] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', 2022-06-23 20:09:17 , '100.990000', 1);
-[2022-07-23 20:40:04,405] [logs/logDB-execute] [ERROR]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20:09:17 , '100.990000', 1)' at line 1")
-[2022-07-23 20:41:47,541] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', '2022-06-23 20:09:17' , '100.990000', 1);
-[2022-07-23 20:41:47,548] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:41:56,263] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '500.990000', 1);
-[2022-07-23 20:41:56,267] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:45:31,773] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by id desc limit 1;
-[2022-07-23 20:45:31,779] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 20:49:16,353] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by id desc limit 1;
-[2022-07-23 20:49:16,356] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 20:49:16,356] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '%s' and trade_type = 2 and trade_date between '%s' and '%s';
-[2022-07-23 20:49:16,363] [logs/logDB-execute] [DEBUG]: ((None,),)
-[2022-07-23 20:50:12,890] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by id desc limit 1;
-[2022-07-23 20:50:12,895] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 20:50:12,896] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 20:50:12,898] [logs/logDB-execute] [DEBUG]: ((None,),)
-[2022-07-23 20:51:10,146] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by id desc limit 1;
-[2022-07-23 20:51:10,151] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 20:51:10,151] [logs/logDB-execute] [DEBUG]: execute sql: select trade_amount from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 20:51:10,154] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:52:42,890] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '500.000000', 2);
-[2022-07-23 20:52:42,899] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:53:36,732] [logs/logDB-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', '2022-05-23 20:09:17' , '100.000000', 2);
-[2022-07-23 20:53:36,739] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 20:54:44,327] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by id desc limit 1;
-[2022-07-23 20:54:44,329] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 20:54:44,330] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 20:54:44,330] [logs/logDB-execute] [DEBUG]: ((600.0,),)
-[2022-07-23 21:00:11,171] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by id desc limit 1;
-[2022-07-23 21:00:11,174] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 21:00:11,175] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 21:00:11,176] [logs/logDB-execute] [DEBUG]: ((600.0,),)
-[2022-07-23 21:00:11,176] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 21:00:11,177] [logs/logDB-execute] [DEBUG]: ((11603.96,),)
-[2022-07-23 21:20:03,576] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 21:20:03,580] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 21:20:03,580] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 21:20:03,581] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 21:22:30,688] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 21:22:30,692] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 21:22:30,693] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 21:22:30,694] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 21:22:30,694] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 21:22:30,695] [logs/logDB-execute] [DEBUG]: ((600.0,),)
-[2022-07-23 21:22:30,696] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 21:22:30,696] [logs/logDB-execute] [DEBUG]: ((11603.96,),)
-[2022-07-23 22:15:46,763] [logs/logDB-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 1;
-[2022-07-23 22:15:46,767] [logs/logDB-execute] [DEBUG]: (('11111',),)
-[2022-07-23 22:15:46,768] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 22:15:46,769] [logs/logDB-execute] [DEBUG]: ((10000.0,),)
-[2022-07-23 22:15:46,770] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 22:15:46,770] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 22:15:46,770] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 22:15:46,771] [logs/logDB-execute] [DEBUG]: ((None,),)
-[2022-07-23 22:15:46,772] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 22:15:46,772] [logs/logDB-execute] [DEBUG]: ((10000.0,),)
-[2022-07-23 22:17:35,911] [logs/logDB-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 1;
-[2022-07-23 22:17:35,912] [logs/logDB-execute] [DEBUG]: (('11111',),)
-[2022-07-23 22:17:35,913] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 22:17:35,916] [logs/logDB-execute] [DEBUG]: ((10000.0,),)
-[2022-07-23 22:17:35,916] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 22:17:35,916] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 22:17:35,917] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 22:17:35,919] [logs/logDB-execute] [DEBUG]: ((None,),)
-[2022-07-23 22:17:35,919] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 22:17:35,919] [logs/logDB-execute] [DEBUG]: ((10000.0,),)
-[2022-07-23 22:18:07,262] [logs/logDB-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
-[2022-07-23 22:18:07,264] [logs/logDB-execute] [DEBUG]: (('22222',),)
-[2022-07-23 22:18:07,265] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 22:18:07,266] [logs/logDB-execute] [DEBUG]: ((10000.99,),)
-[2022-07-23 22:18:07,266] [logs/logDB-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
-[2022-07-23 22:18:07,267] [logs/logDB-execute] [DEBUG]: ()
-[2022-07-23 22:18:07,267] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 22:18:07,268] [logs/logDB-execute] [DEBUG]: ((600.0,),)
-[2022-07-23 22:18:07,268] [logs/logDB-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
-[2022-07-23 22:18:07,269] [logs/logDB-execute] [DEBUG]: ((11603.96,),)
+[2022-07-30 12:11:15,768] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:15,770] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:18,778] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:18,778] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:21,789] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:21,789] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:24,821] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:24,822] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:27,832] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:27,833] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:32,012] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:32,012] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:35,028] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:35,029] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:38,041] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:38,041] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:41,047] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:41,047] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:11:44,065] [logs/logDB-connect_database] [ERROR]: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[2022-07-30 12:11:44,065] [logs/logDB-connect_database] [ERROR]: connect database fail, try it in 3 second....
+[2022-07-30 12:29:09,529] [logs/logDB-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
+[2022-07-30 12:29:09,529] [logs/logDB-execute] [ERROR]: 'NoneType' object has no attribute 'ping'
+[2022-07-30 12:30:00,226] [logs/logDB-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
+[2022-07-30 12:30:00,226] [logs/logDB-execute] [ERROR]: 'NoneType' object has no attribute 'ping'
+[2022-07-30 12:30:51,355] [logs/logDB-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
+[2022-07-30 12:30:51,357] [logs/logDB-execute] [ERROR]: 'NoneType' object has no attribute 'ping'
+[2022-07-30 12:33:26,114] [logs/logDB-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
+[2022-07-30 12:33:26,114] [logs/logDB-execute] [ERROR]: 'NoneType' object has no attribute 'ping'

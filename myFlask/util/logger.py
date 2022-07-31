@@ -29,13 +29,14 @@ class Logger(object):
         # 创建一个handler，用于将日志输出到控制台
         consoleHandler = logging.StreamHandler()
         consoleHandler.setFormatter(formatStr)
-        # 创建一个handler，用于写入日志文件 , 往文件里写入#指定间隔时间自动生成文件的处理器
-        fileHandler = handlers.TimedRotatingFileHandler(filename=logName, when="midnight", backupCount=backupCount,
-                                                        encoding='utf-8')
-        fileHandler.setFormatter(formatStr)
+        if not self.logger.handlers:
+            # 创建一个handler，用于写入日志文件 , 往文件里写入#指定间隔时间自动生成文件的处理器
+            fileHandler = handlers.TimedRotatingFileHandler(filename=logName, when="midnight", backupCount=backupCount,
+                                                            encoding='utf-8')
+            fileHandler.setFormatter(formatStr)
 
-        self.logger.addHandler(consoleHandler)
-        self.logger.addHandler(fileHandler)
+            # self.logger.addHandler(consoleHandler)
+            self.logger.addHandler(fileHandler)
 
     def getLogger(self):
         return self.logger

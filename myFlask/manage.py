@@ -11,7 +11,8 @@
 from server.server import app, logging_handler
 from api import logTest
 from api.blueprintTest import simpleLogBP, helloLogBP
-from api.invest import investBP
+from api.invest_record import investBP
+from api.invest_query import investBP2
 
 if __name__ == '__main__':
     # excel.init_excel(app)
@@ -19,6 +20,7 @@ if __name__ == '__main__':
     app.register_blueprint(simpleLogBP)
     app.register_blueprint(helloLogBP)
     app.register_blueprint(investBP)
+    app.register_blueprint(investBP2)
 
     app.run(
         host='127.0.0.1',

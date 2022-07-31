@@ -6,6 +6,7 @@
 1.2 全局配置，不使用app.logger——done
 1.3 代码可读性，位置规划——done
 1.4 指定编码格式，处理中文字符问题——done,https://www.cnblogs.com/TurboWay/p/9304024.html
+1.5 多个文件并发flask log 另一个程序正在使用此文件,进程无法访问问题
 
 2、route endpoint用法
 3、url_for用法

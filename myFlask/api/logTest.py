@@ -9,7 +9,7 @@
 from flask import request, jsonify
 
 from server.server import app
-from myFlask.util.logger import Logger
+from util.logger import Logger
 
 @app.route('/log')
 def printLog():

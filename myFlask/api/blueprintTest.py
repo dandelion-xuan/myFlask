@@ -9,8 +9,8 @@
 from flask import Blueprint
 from flask import request
 
-from myFlask.server.server import app
-from myFlask.util.logger import Logger
+from server.server import app
+from util.logger import Logger
 
 simpleLogBP = Blueprint('simple', __name__, url_prefix='/simpleLog')
 helloLogBP = Blueprint('hello', __name__, url_prefix='/helloLog')

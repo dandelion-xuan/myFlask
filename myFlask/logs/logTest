@@ -1,49 +1,1770 @@
-[2022-02-15 22:47:48,760] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog/log
-[2022-02-15 22:47:48,762] [logs/logTest-printLogger] [DEBUG]: debug message
-[2022-02-15 22:47:48,762] [logs/logTest-printLogger] [INFO]: info message
-[2022-02-15 22:51:54,433] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
-[2022-02-15 22:51:54,433] [logs/logTest-helloLog] [DEBUG]: debug message
-[2022-02-15 22:51:54,433] [logs/logTest-helloLog] [INFO]: info message
-[2022-02-21 11:42:44,513] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 11:43:20,561] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 14:19:47,479] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 14:19:47,479] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 14:19:50,573] [logs/logTest-urlforSecond] [DEBUG]: http://127.0.0.1:8889/urlforTwo
-[2022-02-21 14:19:50,573] [logs/logTest-urlforSecond] [DEBUG]: http://127.0.0.1:8889/urlforTwo
-[2022-02-21 14:19:50,573] [logs/logTest-urlforSecond] [DEBUG]: http://127.0.0.1:8889/urlforTwo
-[2022-02-21 14:25:36,161] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 14:26:55,884] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 14:36:37,688] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 14:36:37,695] [logs/logTest-urlforSecond] [INFO]: 请求我！
-[2022-02-21 14:36:37,695] [logs/logTest-urlforSecond] [INFO]: 请求我！
-[2022-02-21 14:36:37,695] [logs/logTest-urlforSecond] [DEBUG]: 请求我！
-[2022-02-21 14:36:37,695] [logs/logTest-urlforSecond] [DEBUG]: 请求我！
-[2022-02-21 15:05:59,730] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 15:05:59,734] [logs/logTest-urlforSecond] [INFO]: 请求我！
-[2022-02-21 15:06:41,697] [logs/logTest-url] [DEBUG]: http://127.0.0.1:8889/urlpage
-[2022-02-21 15:06:41,697] [logs/logTest-url] [DEBUG]: ImmutableMultiDict([])
-[2022-02-21 15:07:31,238] [logs/logTest-url] [DEBUG]: http://127.0.0.1:8889/urlpage
-[2022-02-21 15:07:31,238] [logs/logTest-url] [DEBUG]: ImmutableMultiDict([])
-[2022-02-21 15:07:31,238] [logs/logTest-url] [DEBUG]: /1/user
-[2022-02-21 15:08:19,942] [logs/logTest-url] [DEBUG]: http://127.0.0.1:8889/urlpage
-[2022-02-21 15:08:19,942] [logs/logTest-url] [DEBUG]: ImmutableMultiDict([])
-[2022-02-21 15:08:55,748] [logs/logTest-url] [DEBUG]: http://127.0.0.1:8889/urlpage
-[2022-02-21 15:08:55,748] [logs/logTest-url] [DEBUG]: ImmutableMultiDict([])
-[2022-02-21 15:22:18,117] [logs/logTest-url] [DEBUG]: http://127.0.0.1:8889/urlpage
-[2022-02-21 15:22:18,118] [logs/logTest-url] [DEBUG]: ImmutableMultiDict([])
-[2022-02-21 15:22:49,565] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 15:22:49,568] [logs/logTest-urlforSecond] [INFO]: 请求我！
+[2022-07-31 11:31:20,254] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-31 11:31:20,254] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-31 11:31:46,764] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-31 11:31:46,764] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-31 11:31:46,765] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
+[2022-07-31 11:31:46,765] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
+[2022-07-31 11:31:46,882] [logs/logTest-execute] [DEBUG]: (('22222',),)
+[2022-07-31 11:31:46,882] [logs/logTest-execute] [DEBUG]: (('22222',),)
+[2022-07-31 11:31:46,887] [logs/logTest-query_product_type_profit] [INFO]: ['22222']
+[2022-07-31 11:31:46,887] [logs/logTest-query_product_type_profit] [INFO]: ['22222']
+[2022-07-31 11:31:46,888] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 11:31:46,888] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 11:31:46,889] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 11:31:46,889] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 11:31:46,890] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 11:31:46,890] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 11:31:46,899] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 11:31:46,899] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 11:31:46,903] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 11:31:46,903] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 11:31:46,904] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 11:31:46,904] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 11:31:46,905] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 11:31:46,905] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 11:31:46,910] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 11:31:46,910] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 11:31:46,911] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 11:31:46,911] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 11:31:46,912] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 11:31:46,912] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 11:31:46,913] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 11:31:46,913] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 11:31:46,921] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 11:31:46,921] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 11:31:46,927] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 11:31:46,927] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 11:31:46,929] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 11:31:46,929] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 11:31:46,930] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 11:31:46,930] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 11:31:46,932] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 11:31:46,932] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 11:31:46,932] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 11:31:46,932] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 11:31:46,933] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 11:31:46,933] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 11:31:46,934] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 11:31:46,934] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 11:31:46,935] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:31:46,935] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:31:46,936] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 11:31:46,936] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 11:31:46,937] [logs/logTest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:31:46,937] [logs/logTest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:31:46,938] [logs/logTest-query_product_type_profit] [INFO]: 11603.96
+[2022-07-31 11:31:46,938] [logs/logTest-query_product_type_profit] [INFO]: 11603.96
+[2022-07-31 11:31:46,945] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 11:31:46,945] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 11:31:46,947] [logs/logTest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:31:46,947] [logs/logTest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:32:00,570] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-31 11:32:00,570] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-31 11:32:00,571] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
+[2022-07-31 11:32:00,571] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2;
+[2022-07-31 11:32:00,572] [logs/logTest-execute] [DEBUG]: (('22222',),)
+[2022-07-31 11:32:00,572] [logs/logTest-execute] [DEBUG]: (('22222',),)
+[2022-07-31 11:32:00,572] [logs/logTest-query_product_type_profit] [INFO]: ['22222']
+[2022-07-31 11:32:00,572] [logs/logTest-query_product_type_profit] [INFO]: ['22222']
+[2022-07-31 11:32:00,572] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 11:32:00,572] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 11:32:00,572] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 11:32:00,572] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 11:32:00,573] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 11:32:00,573] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 11:32:00,577] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 11:32:00,577] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 11:32:00,578] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 11:32:00,578] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 11:32:00,579] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 11:32:00,579] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 11:32:00,580] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 11:32:00,580] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 11:32:00,581] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 11:32:00,581] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 11:32:00,582] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 11:32:00,582] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 11:32:00,583] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 11:32:00,583] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 11:32:00,584] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 11:32:00,584] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 11:32:00,585] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 11:32:00,585] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 11:32:00,586] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 11:32:00,586] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 11:32:00,586] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 11:32:00,586] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 11:32:00,587] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 11:32:00,587] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 11:32:00,589] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 11:32:00,589] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 11:32:00,590] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 11:32:00,590] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 11:32:00,597] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 11:32:00,597] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 11:32:00,599] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 11:32:00,599] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 11:32:00,600] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:32:00,600] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:32:00,601] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 11:32:00,601] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 11:32:00,602] [logs/logTest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:32:00,602] [logs/logTest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:32:00,603] [logs/logTest-query_product_type_profit] [INFO]: 11603.96
+[2022-07-31 11:32:00,603] [logs/logTest-query_product_type_profit] [INFO]: 11603.96
+[2022-07-31 11:32:00,604] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 11:32:00,604] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 11:32:00,605] [logs/logTest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-31 11:32:00,605] [logs/logTest-query_product_type_profit] [INFO]: -1002.9699999999993
+[2022-07-31 12:22:36,991] [logs/logTest-view_1] [INFO]: {'start_time': '2022-05-23 20:09:17', 'end_time': '2022-08-23 20:09:17'}
+[2022-07-31 12:22:36,991] [logs/logTest-view_1] [INFO]: {'start_time': '2022-05-23 20:09:17', 'end_time': '2022-08-23 20:09:17'}
+[2022-07-31 12:22:36,991] [logs/logTest-view_1] [INFO]: {'start_time': '2022-05-23 20:09:17', 'end_time': '2022-08-23 20:09:17'}
+[2022-07-31 12:22:36,991] [logs/logTest-view_1] [INFO]: {'start_time': '2022-05-23 20:09:17', 'end_time': '2022-08-23 20:09:17'}
+[2022-07-31 12:29:12,041] [logs/logTest-view_1] [INFO]: {'start_time': '2022-05-23 20:09:17', 'end_time': '2022-08-23 20:09:17'}
+[2022-07-31 12:29:12,041] [logs/logTest-view_1] [INFO]: {'start_time': '2022-05-23 20:09:17', 'end_time': '2022-08-23 20:09:17'}
+[2022-07-31 12:29:12,041] [logs/logTest-view_1] [INFO]: {'start_time': '2022-05-23 20:09:17', 'end_time': '2022-08-23 20:09:17'}
+[2022-07-31 12:29:12,041] [logs/logTest-view_1] [INFO]: {'start_time': '2022-05-23 20:09:17', 'end_time': '2022-08-23 20:09:17'}
+[2022-07-31 12:29:42,731] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 12:29:42,731] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 12:29:42,731] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 12:29:42,731] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:17:05,862] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:17:05,862] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:17:05,862] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:17:05,862] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:17:05,867] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:17:05,867] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:17:05,867] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:17:05,867] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:17:05,869] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:17:05,869] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:17:05,869] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:17:05,869] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:17:05,934] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:17:05,934] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:17:05,934] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:17:05,934] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:17:05,940] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:17:05,940] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:17:05,940] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:17:05,940] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:17:05,942] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:17:05,942] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:17:05,942] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:17:05,942] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:17:05,945] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:17:05,945] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:17:05,945] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:17:05,945] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:17:05,947] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:05,947] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:05,947] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:05,947] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:05,966] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:17:05,966] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:17:05,966] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:17:05,966] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:17:05,967] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:05,967] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:05,967] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:05,967] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:05,969] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:17:05,969] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:17:05,969] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:17:05,969] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:17:05,970] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:05,970] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:05,970] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:05,970] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:05,975] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:17:05,975] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:17:05,975] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:17:05,975] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:17:05,980] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:05,980] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:05,980] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:05,980] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:05,982] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:17:05,982] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:17:05,982] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:17:05,982] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:17:05,983] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:05,983] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:05,983] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:05,983] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:05,989] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:17:05,989] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:17:05,989] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:17:05,989] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:17:05,996] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:05,996] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:05,996] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:05,996] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:05,997] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:17:05,997] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:17:05,997] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:17:05,997] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:17:05,999] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:05,999] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:05,999] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:05,999] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,001] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:17:06,001] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:17:06,001] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:17:06,001] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:17:06,002] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:06,002] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:06,002] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:06,002] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:06,003] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:06,003] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:06,003] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:06,003] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:17:06,005] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:17:06,005] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:17:06,005] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:17:06,005] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:17:06,012] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:17:06,012] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:17:06,012] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:17:06,012] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:17:06,014] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:17:06,014] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:17:06,014] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:17:06,014] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:17:06,015] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:17:06,015] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:17:06,015] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:17:06,015] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:17:06,017] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:06,017] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:06,017] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:06,017] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:06,019] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:17:06,019] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:17:06,019] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:17:06,019] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:17:06,020] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:17:06,020] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:17:06,020] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:17:06,020] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:17:06,022] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:17:06,022] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:17:06,022] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:17:06,022] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:17:06,028] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:06,028] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:06,028] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:06,028] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:17:06,030] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:17:06,030] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:17:06,030] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:17:06,030] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:17:06,032] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:06,032] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:06,032] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:06,032] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:17:06,033] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:17:06,033] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:17:06,033] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:17:06,033] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:17:06,034] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,034] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,034] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,034] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,036] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 15:17:06,036] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 15:17:06,036] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 15:17:06,036] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 15:17:06,038] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 15:17:06,038] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 15:17:06,038] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 15:17:06,038] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 15:17:06,045] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:17:06,045] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:17:06,045] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:17:06,045] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:17:06,047] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,047] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,047] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,047] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:17:06,050] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:17:06,050] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:17:06,050] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:17:06,050] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:17:06,052] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:17:06,052] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:17:06,052] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:17:06,052] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:17:06,057] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:17:06,057] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:17:06,057] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:17:06,057] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:17:06,062] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:17:06,062] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:17:06,062] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:17:06,062] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:17:06,064] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 15:17:06,064] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 15:17:06,064] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 15:17:06,064] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 15:17:06,065] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 15:17:06,065] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 15:17:06,065] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 15:17:06,065] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 15:19:59,591] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:19:59,591] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:19:59,591] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:19:59,591] [logs/logTest-view_1] [INFO]: {'startTime': '2022-05-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:19:59,592] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:19:59,592] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:19:59,592] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:19:59,592] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:19:59,596] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:19:59,596] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:19:59,596] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:19:59,596] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:19:59,599] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:19:59,599] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:19:59,599] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:19:59,599] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:19:59,602] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:19:59,602] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:19:59,602] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:19:59,602] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:19:59,608] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:19:59,608] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:19:59,608] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:19:59,608] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:19:59,609] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:19:59,609] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:19:59,609] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:19:59,609] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:19:59,612] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,612] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,612] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,612] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,615] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:19:59,615] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:19:59,615] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:19:59,615] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:19:59,617] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,617] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,617] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,617] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,622] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:19:59,622] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:19:59,622] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:19:59,622] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:19:59,623] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,623] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,623] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,623] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,625] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:19:59,625] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:19:59,625] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:19:59,625] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:19:59,628] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,628] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,628] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,628] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,629] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:19:59,629] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:19:59,629] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:19:59,629] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:19:59,631] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,631] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,631] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,631] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,638] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:19:59,638] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:19:59,638] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:19:59,638] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:19:59,639] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,639] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,639] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,639] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,641] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:19:59,641] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:19:59,641] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:19:59,641] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:19:59,642] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,642] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,642] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,642] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,645] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:19:59,645] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:19:59,645] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:19:59,645] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:19:59,647] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,647] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,647] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,647] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,652] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,652] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,652] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,652] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:19:59,654] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:19:59,654] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:19:59,654] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:19:59,654] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:19:59,655] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:19:59,655] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:19:59,655] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:19:59,655] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:19:59,657] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:19:59,657] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:19:59,657] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:19:59,657] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:19:59,658] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:19:59,658] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:19:59,658] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:19:59,658] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:19:59,659] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,659] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,659] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,659] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-05-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,663] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:19:59,663] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:19:59,663] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:19:59,663] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:19:59,668] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:19:59,668] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:19:59,668] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:19:59,668] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:19:59,669] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:19:59,669] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:19:59,669] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:19:59,669] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:19:59,671] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,671] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,671] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,671] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-05-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:19:59,673] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:19:59,673] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:19:59,673] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:19:59,673] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:19:59,674] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,674] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,674] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,674] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:19:59,675] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:19:59,675] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:19:59,675] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:19:59,675] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:19:59,678] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,678] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,678] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,678] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,685] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 15:19:59,685] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 15:19:59,685] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 15:19:59,685] [logs/logTest-execute] [DEBUG]: ((600.0,),)
+[2022-07-31 15:19:59,687] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 15:19:59,687] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 15:19:59,687] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 15:19:59,687] [logs/logTest-query_product_profit] [INFO]: 600.0
+[2022-07-31 15:19:59,688] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:19:59,688] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:19:59,688] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:19:59,688] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:19:59,690] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,690] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,690] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,690] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-05-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:19:59,692] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:19:59,692] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:19:59,692] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:19:59,692] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:19:59,695] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:19:59,695] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:19:59,695] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:19:59,695] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:19:59,701] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:19:59,701] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:19:59,701] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:19:59,701] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:19:59,702] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:19:59,702] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:19:59,702] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:19:59,702] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:19:59,704] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 15:19:59,704] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 15:19:59,704] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 15:19:59,704] [logs/logTest-query_product_profit] [INFO]: -1002.9699999999993
+[2022-07-31 15:19:59,706] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 15:19:59,706] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 15:19:59,706] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 15:19:59,706] [logs/logTest-query_product_profit] [INFO]: -0.08643342445165267
+[2022-07-31 15:20:49,035] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
+[2022-07-31 15:20:49,035] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
+[2022-07-31 15:20:49,035] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
+[2022-07-31 15:20:49,035] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
+[2022-07-31 15:20:49,035] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
+[2022-07-31 15:20:49,039] [logs/logTest-helloLog] [DEBUG]: debug message
+[2022-07-31 15:20:49,039] [logs/logTest-helloLog] [DEBUG]: debug message
+[2022-07-31 15:20:49,039] [logs/logTest-helloLog] [DEBUG]: debug message
+[2022-07-31 15:20:49,039] [logs/logTest-helloLog] [DEBUG]: debug message
+[2022-07-31 15:20:49,039] [logs/logTest-helloLog] [DEBUG]: debug message
+[2022-07-31 15:20:49,041] [logs/logTest-helloLog] [INFO]: info message
+[2022-07-31 15:20:49,041] [logs/logTest-helloLog] [INFO]: info message
+[2022-07-31 15:20:49,041] [logs/logTest-helloLog] [INFO]: info message
+[2022-07-31 15:20:49,041] [logs/logTest-helloLog] [INFO]: info message
+[2022-07-31 15:20:49,041] [logs/logTest-helloLog] [INFO]: info message
+[2022-07-31 15:23:09,543] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-07-31 15:23:09,543] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-07-31 15:23:09,543] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-07-31 15:23:09,543] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-07-31 15:23:09,543] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-07-31 15:23:09,543] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
+[2022-07-31 15:23:09,544] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-07-31 15:23:09,544] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-07-31 15:23:09,544] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-07-31 15:23:09,544] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-07-31 15:23:09,544] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-07-31 15:23:09,544] [logs/logTest-printLogger] [DEBUG]: debug message
+[2022-07-31 15:23:09,547] [logs/logTest-printLogger] [INFO]: info message
+[2022-07-31 15:23:09,547] [logs/logTest-printLogger] [INFO]: info message
+[2022-07-31 15:23:09,547] [logs/logTest-printLogger] [INFO]: info message
+[2022-07-31 15:23:09,547] [logs/logTest-printLogger] [INFO]: info message
+[2022-07-31 15:23:09,547] [logs/logTest-printLogger] [INFO]: info message
+[2022-07-31 15:23:09,547] [logs/logTest-printLogger] [INFO]: info message
+[2022-07-31 15:27:46,498] [logs/logTest-add_product] [INFO]: {'productId': '33333', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:27:46,498] [logs/logTest-add_product] [INFO]: {'productId': '33333', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:27:46,498] [logs/logTest-add_product] [INFO]: {'productId': '33333', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:27:46,498] [logs/logTest-add_product] [INFO]: {'productId': '33333', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:27:46,498] [logs/logTest-add_product] [INFO]: {'productId': '33333', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:27:46,498] [logs/logTest-add_product] [INFO]: {'productId': '33333', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:27:46,499] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('33333','qqqq',1,1);
+[2022-07-31 15:27:46,499] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('33333','qqqq',1,1);
+[2022-07-31 15:27:46,499] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('33333','qqqq',1,1);
+[2022-07-31 15:27:46,499] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('33333','qqqq',1,1);
+[2022-07-31 15:27:46,499] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('33333','qqqq',1,1);
+[2022-07-31 15:27:46,499] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('33333','qqqq',1,1);
+[2022-07-31 15:27:46,566] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,566] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,566] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,566] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,566] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,566] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,573] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('33333', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:27:46,573] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('33333', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:27:46,573] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('33333', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:27:46,573] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('33333', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:27:46,573] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('33333', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:27:46,573] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('33333', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:27:46,586] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,586] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,586] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,586] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,586] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,586] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,587] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('33333', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:27:46,587] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('33333', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:27:46,587] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('33333', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:27:46,587] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('33333', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:27:46,587] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('33333', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:27:46,587] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('33333', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:27:46,600] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,600] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,600] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,600] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,600] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,600] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:27:46,602] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,602] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,602] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,602] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,602] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,602] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,604] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,604] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,604] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,604] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,604] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,604] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,610] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,610] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,610] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,610] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,610] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:27:46,610] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:30:51,513] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:30:51,513] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:30:51,513] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:30:51,513] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:30:51,513] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:30:51,513] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:30:51,516] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:30:51,516] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:30:51,516] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:30:51,516] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:30:51,516] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:30:51,516] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:30:51,518] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:30:51,518] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:30:51,518] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:30:51,518] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:30:51,518] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:30:51,518] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:30:51,524] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',), ('33333',))
+[2022-07-31 15:30:51,524] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',), ('33333',))
+[2022-07-31 15:30:51,524] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',), ('33333',))
+[2022-07-31 15:30:51,524] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',), ('33333',))
+[2022-07-31 15:30:51,524] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',), ('33333',))
+[2022-07-31 15:30:51,524] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',), ('33333',))
+[2022-07-31 15:30:51,530] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222', '33333']
+[2022-07-31 15:30:51,530] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222', '33333']
+[2022-07-31 15:30:51,530] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222', '33333']
+[2022-07-31 15:30:51,530] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222', '33333']
+[2022-07-31 15:30:51,530] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222', '33333']
+[2022-07-31 15:30:51,530] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222', '33333']
+[2022-07-31 15:30:51,532] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:30:51,532] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:30:51,532] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:30:51,532] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:30:51,532] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:30:51,532] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:30:51,534] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,534] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,534] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,534] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,534] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,534] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,537] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,537] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,537] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,537] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,537] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,537] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,543] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,543] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,543] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,543] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,543] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,543] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,546] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,546] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,546] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,546] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,546] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,546] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,548] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,548] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,548] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,548] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,548] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,548] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,550] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,550] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,550] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,550] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,550] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,550] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,555] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,555] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,555] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,555] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,555] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,555] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,561] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,561] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,561] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,561] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,561] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,561] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,563] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,563] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,563] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,563] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,563] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,563] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,565] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,565] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,565] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,565] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,565] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,565] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,568] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,568] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,568] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,568] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,568] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,568] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,571] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,571] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,571] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,571] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,571] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,571] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,579] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,579] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,579] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,579] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,579] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,579] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,581] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,581] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,581] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,581] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,581] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,581] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,584] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,584] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,584] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,584] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,584] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,584] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,588] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,588] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,588] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,588] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,588] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,588] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,595] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,595] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,595] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,595] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,595] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,595] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,597] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,597] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,597] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,597] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,597] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,597] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,599] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,599] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,599] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,599] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,599] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,599] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,601] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,601] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,601] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,601] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,601] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,601] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,605] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,605] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,605] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,605] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,605] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,605] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,611] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,611] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,611] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,611] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,611] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,611] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,615] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:30:51,615] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:30:51,615] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:30:51,615] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:30:51,615] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:30:51,615] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:30:51,616] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:30:51,616] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:30:51,616] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:30:51,616] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:30:51,616] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:30:51,616] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:30:51,619] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,619] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,619] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,619] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,619] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,619] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,627] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,627] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,627] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,627] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,627] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,627] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,629] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,629] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,629] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,629] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,629] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,629] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,631] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,631] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,631] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,631] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,631] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,631] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,633] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,633] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,633] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,633] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,633] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,633] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,641] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,641] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,641] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,641] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,641] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,641] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,644] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:30:51,644] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:30:51,644] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:30:51,644] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:30:51,644] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:30:51,644] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:30:51,646] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:30:51,646] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:30:51,646] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:30:51,646] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:30:51,646] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:30:51,646] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:30:51,648] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,648] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,648] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,648] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,648] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,648] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,655] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,655] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,655] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,655] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,655] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,655] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,659] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:30:51,659] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:30:51,659] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:30:51,659] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:30:51,659] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:30:51,659] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:30:51,661] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,661] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,661] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,661] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,661] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,661] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,663] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,663] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,663] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,663] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,663] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,663] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:30:51,665] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,665] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,665] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,665] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,665] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,665] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,672] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:30:51,672] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:30:51,672] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:30:51,672] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:30:51,672] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:30:51,672] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:30:51,674] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:30:51,674] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:30:51,674] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:30:51,674] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:30:51,674] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:30:51,674] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:30:51,676] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,676] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,676] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,676] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,676] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,676] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:30:51,678] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,678] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,678] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,678] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,678] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,678] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,681] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,681] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,681] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,681] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,681] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,681] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,688] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,688] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,688] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,688] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,688] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,688] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,691] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,691] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,691] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,691] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,691] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,691] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:30:51,693] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,693] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,693] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,693] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,693] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,693] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:30:51,696] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,696] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,696] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,696] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,696] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,696] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:30:51,705] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,705] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,705] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,705] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,705] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,705] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,707] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,707] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,707] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,707] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,707] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,707] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:30:51,709] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,709] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,709] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,709] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,709] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,709] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,712] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,712] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,712] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,712] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,712] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,712] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:30:51,718] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,718] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,718] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,718] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,718] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,718] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:30:51,722] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,722] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,722] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,722] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,722] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,722] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:30:51,724] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,724] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,724] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,724] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,724] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,724] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:30:51,726] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,726] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,726] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,726] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,726] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,726] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:30:51,732] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,732] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,732] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,732] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,732] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,732] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,734] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,734] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,734] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,734] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,734] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,734] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:30:51,738] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,738] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,738] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,738] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,738] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,738] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:30:51,740] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,740] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,740] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,740] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,740] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,740] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,742] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,742] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,742] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,742] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,742] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:30:51,742] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:34:04,660] [logs/logTest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 2, 'amount': 100}
+[2022-07-31 15:34:46,545] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:34:04,660] [logs/logTest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 2, 'amount': 100}
+[2022-07-31 15:34:46,545] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:34:04,660] [logs/logTest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 2, 'amount': 100}
+[2022-07-31 15:34:46,545] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:34:04,660] [logs/logTest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 2, 'amount': 100}
+[2022-07-31 15:34:46,545] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:34:04,660] [logs/logTest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 2, 'amount': 100}
+[2022-07-31 15:34:46,545] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:34:04,660] [logs/logTest-add_trade_record] [DEBUG]: {'productId': '22222', 'productName': 'www', 'tradeType': 2, 'amount': 100}
+[2022-07-31 15:34:46,545] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:34:51,198] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '100.000000', 2);
+[2022-07-31 15:34:51,199] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:34:51,198] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '100.000000', 2);
+[2022-07-31 15:34:51,199] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:34:51,198] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '100.000000', 2);
+[2022-07-31 15:34:51,199] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:34:51,198] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '100.000000', 2);
+[2022-07-31 15:34:51,199] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:34:51,198] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '100.000000', 2);
+[2022-07-31 15:34:51,199] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:34:51,198] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('22222', 'www', current_time , '100.000000', 2);
+[2022-07-31 15:34:51,199] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:34:51,209] [logs/logTest-execute] [ERROR]: 'NoneType' object has no attribute 'read'
+[2022-07-31 15:34:51,209] [logs/logTest-execute] [ERROR]: 'NoneType' object has no attribute 'read'
+[2022-07-31 15:34:51,209] [logs/logTest-execute] [ERROR]: 'NoneType' object has no attribute 'read'
+[2022-07-31 15:34:51,209] [logs/logTest-execute] [ERROR]: 'NoneType' object has no attribute 'read'
+[2022-07-31 15:34:51,209] [logs/logTest-execute] [ERROR]: 'NoneType' object has no attribute 'read'
+[2022-07-31 15:34:51,209] [logs/logTest-execute] [ERROR]: 'NoneType' object has no attribute 'read'
+[2022-07-31 15:34:51,219] [logs/logTest-execute] [ERROR]: (2013, 'Lost connection to MySQL server during query')
+[2022-07-31 15:34:51,219] [logs/logTest-execute] [ERROR]: (2013, 'Lost connection to MySQL server during query')
+[2022-07-31 15:34:51,219] [logs/logTest-execute] [ERROR]: (2013, 'Lost connection to MySQL server during query')
+[2022-07-31 15:34:51,219] [logs/logTest-execute] [ERROR]: (2013, 'Lost connection to MySQL server during query')
+[2022-07-31 15:34:51,219] [logs/logTest-execute] [ERROR]: (2013, 'Lost connection to MySQL server during query')
+[2022-07-31 15:34:51,219] [logs/logTest-execute] [ERROR]: (2013, 'Lost connection to MySQL server during query')
+[2022-07-31 15:35:35,590] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:35:35,590] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:35:35,590] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:35:35,590] [logs/logTest-add_product] [INFO]: {'productId': '4444', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:35:35,591] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:35:35,591] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:35:35,591] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:35:35,591] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('4444','qqqq',1,1);
+[2022-07-31 15:35:35,599] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,599] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,599] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,599] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,599] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('4444', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:35:35,599] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('4444', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:35:35,599] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('4444', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:35:35,599] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('4444', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:35:35,609] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,609] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,609] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,609] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,609] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('4444', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:35:35,609] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('4444', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:35:35,609] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('4444', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:35:35,609] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('4444', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:35:35,619] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:35:35,619] [logs/logTest-add_product] [DEBUG]: ()
 
 
 
-[2022-02-21 15:23:40,534] [logs/logTest-urlforFirst] [DEBUG]: http://127.0.0.1:8889/urlforOne
-[2022-02-21 15:23:40,542] [logs/logTest-urlforSecond] [INFO]: 请求我！
-[2022-07-23 16:56:13,716] [logs/logTest-printLogger] [DEBUG]: http://127.0.0.1:8889/helloLog
-[2022-07-23 16:56:13,717] [logs/logTest-printLogger] [DEBUG]: debug message
-[2022-07-23 16:56:13,717] [logs/logTest-printLogger] [INFO]: info message
-[2022-07-23 16:58:15,469] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
-[2022-07-23 16:58:15,469] [logs/logTest-helloLog] [DEBUG]: http://127.0.0.1:8889/helloLog/log
-[2022-07-23 16:58:15,470] [logs/logTest-helloLog] [DEBUG]: debug message
-[2022-07-23 16:58:15,470] [logs/logTest-helloLog] [DEBUG]: debug message
-[2022-07-23 16:58:15,470] [logs/logTest-helloLog] [INFO]: info message
-[2022-07-23 16:58:15,470] [logs/logTest-helloLog] [INFO]: info message
+
+
+
+
+
+
+
+
+
+
+[2022-07-31 15:36:18,158] [logs/logTest-add_product] [INFO]: {'productId': '55555', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:36:18,158] [logs/logTest-add_product] [INFO]: {'productId': '55555', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:36:18,158] [logs/logTest-add_product] [INFO]: {'productId': '55555', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:36:18,158] [logs/logTest-add_product] [INFO]: {'productId': '55555', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:36:18,159] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('55555','qqqq',1,1);
+[2022-07-31 15:36:18,159] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('55555','qqqq',1,1);
+[2022-07-31 15:36:18,159] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('55555','qqqq',1,1);
+[2022-07-31 15:36:18,159] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('55555','qqqq',1,1);
+[2022-07-31 15:36:18,165] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,165] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,165] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,165] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,165] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('55555', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:36:18,165] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('55555', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:36:18,165] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('55555', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:36:18,165] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('55555', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:36:18,171] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,171] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,171] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,171] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,172] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('55555', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:36:18,172] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('55555', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:36:18,172] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('55555', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:36:18,172] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('55555', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:36:18,178] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:36:18,178] [logs/logTest-add_product] [DEBUG]: ()
+
+
+
+
+
+
+[2022-07-31 15:45:15,414] [logs/logTest-add_product] [INFO]: {'productId': '66666', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:45:15,415] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('66666','qqqq',1,1);
+[2022-07-31 15:45:15,490] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:45:15,490] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('66666', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:45:15,503] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:45:15,504] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('66666', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:45:15,510] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:45:15,510] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:45:15,512] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:45:15,512] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:46:40,364] [logs/logTest-add_product] [INFO]: {'productId': '77777', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:46:40,364] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('77777','qqqq',1,1);
+[2022-07-31 15:46:40,384] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:46:40,384] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('77777', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:46:40,391] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:46:40,391] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('77777', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:46:40,396] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:46:40,396] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:46:40,396] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:46:40,396] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:47:15,810] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:47:15,810] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:47:15,810] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:47:15,837] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',), ('33333',), ('4444',), ('55555',), ('66666',), ('77777',))
+[2022-07-31 15:47:15,837] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222', '33333', '4444', '55555', '66666', '77777']
+[2022-07-31 15:47:15,837] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:47:15,837] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:47:15,837] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,846] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,846] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,846] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:47:15,846] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,848] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:47:15,850] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,850] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:47:15,850] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,854] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:47:15,854] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,854] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:47:15,854] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,854] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,854] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,854] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,854] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:47:15,854] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,854] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,855] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:47:15,855] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,856] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:47:15,856] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:47:15,856] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:47:15,856] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,856] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:47:15,856] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,856] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:47:15,856] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,857] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:47:15,857] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:47:15,857] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:47:15,857] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,857] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:47:15,857] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:47:15,857] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:47:15,857] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:47:15,857] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:47:15,857] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:47:15,858] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:47:15,858] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,859] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,859] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,859] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:47:15,859] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,860] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:47:15,860] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,860] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:47:15,860] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,861] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:47:15,861] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,861] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:47:15,861] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,861] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,861] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,861] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,862] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:47:15,862] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,862] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,862] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:47:15,862] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '4444' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,863] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,863] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,863] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:47:15,863] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '4444' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,863] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:47:15,863] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,863] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:47:15,863] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '4444' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,864] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:47:15,864] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,865] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:47:15,865] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '4444' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,867] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,867] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,867] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,867] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:47:15,867] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,867] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,867] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:47:15,867] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '55555' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,867] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,867] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,867] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:47:15,867] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '55555' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,868] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:47:15,868] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,868] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:47:15,869] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '55555' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,869] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:47:15,869] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,869] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:47:15,869] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '55555' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,869] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,870] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,870] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,870] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:47:15,870] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,870] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,870] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:47:15,870] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '66666' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,871] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,871] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,871] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:47:15,871] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '66666' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,871] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:47:15,871] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,871] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:47:15,871] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '66666' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,871] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:47:15,872] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,872] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:47:15,872] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '66666' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,872] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,872] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,872] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,872] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:47:15,872] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,872] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,872] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:47:15,872] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '77777' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,873] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,873] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,873] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:47:15,873] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '77777' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:47:15,873] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:47:15,873] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,873] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:47:15,874] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '77777' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,874] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:47:15,874] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:47:15,874] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:47:15,874] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '77777' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:47:15,874] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:47:15,875] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,875] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:47:15,875] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:47:15,881] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:47:15,881] [logs/logTest-query_product_profit] [INFO]: 0.0
+
+
+
+
+
+[2022-07-31 15:51:40,880] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:51:40,880] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:51:40,880] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:51:40,881] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:51:40,881] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:51:40,881] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:51:40,881] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:51:40,882] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:51:40,883] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:51:40,883] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:51:40,884] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:51:40,884] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:51:40,885] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:51:40,885] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:51:40,885] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:51:40,885] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:51:40,886] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:51:40,886] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:51:40,886] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:51:40,886] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:51:40,887] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:51:40,887] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:51:40,887] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:51:40,887] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:51:40,887] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:51:40,887] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:51:40,887] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:51:40,887] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:51:40,888] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:51:40,888] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:51:40,889] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:51:40,889] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:51:40,892] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:51:40,892] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:51:40,892] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:51:40,892] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:51:40,894] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:51:40,894] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:51:40,894] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:51:40,894] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:51:40,896] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:51:40,896] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:51:40,896] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:51:40,896] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:51:40,896] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:51:40,896] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+
+
+
+[2022-07-31 15:53:43,433] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:53:43,433] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:53:43,434] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:53:43,435] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:53:43,435] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:53:43,435] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:53:43,435] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:53:43,435] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:53:43,436] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:53:43,436] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:53:43,436] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:53:43,436] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:53:43,436] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:53:43,436] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:53:43,436] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:53:43,437] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:53:43,437] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:53:43,437] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:53:43,437] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:53:43,437] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:53:43,438] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:53:43,438] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:53:43,438] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:53:43,438] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:53:43,438] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:53:43,439] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:53:43,439] [logs/logTest-query_all_products_profit] [DEBUG]: {'product_id': '11111', 'profit': 0.0, 'profit_rate': 0.0, 'if_clearance': False, 'capital': 10000.0, 'current_amount': 10000.0, 'back_amout': 0}
+[2022-07-31 15:53:43,439] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:53:43,439] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:53:43,440] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:53:43,441] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:53:43,441] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:53:43,441] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:53:43,442] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:53:43,442] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:53:43,442] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:53:43,442] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:53:43,443] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:53:43,443] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:53:43,443] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:53:43,443] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:53:43,443] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:53:43,443] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:53:43,443] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:53:43,443] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:53:43,444] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:53:43,444] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:53:43,444] [logs/logTest-query_all_products_profit] [DEBUG]: {'product_id': '22222', 'profit': -1102.9699999999993, 'profit_rate': -0.09505117218604678, 'if_clearance': False, 'capital': 11603.96, 'current_amount': 10000.99, 'back_amout': 500.0}
+[2022-07-31 15:54:23,282] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:54:23,283] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:54:23,283] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:54:23,290] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:54:23,290] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:54:23,291] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:54:23,291] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:54:23,291] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:54:23,294] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:54:23,294] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:54:23,295] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:54:23,295] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:54:23,299] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:54:23,299] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:54:23,299] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:54:23,300] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:54:23,303] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:54:23,303] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:54:23,303] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:54:23,304] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:54:23,304] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:54:23,305] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:54:23,305] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:54:23,305] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:54:23,305] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:54:23,305] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:54:23,305] [logs/logTest-query_all_products_profit] [DEBUG]: {'product_id': '11111', 'profit': 0.0, 'profit_rate': 0.0, 'if_clearance': False, 'capital': 10000.0, 'current_amount': 10000.0, 'back_amout': 0}
+[2022-07-31 15:54:23,306] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:54:23,306] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:54:23,306] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:54:23,307] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:54:23,307] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:54:23,307] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:54:23,308] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:54:23,308] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:54:23,308] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:54:23,308] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:54:23,309] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:54:23,309] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:54:23,309] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:54:23,309] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:54:23,310] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:54:23,310] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:54:23,311] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:54:23,311] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:54:23,311] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:54:23,311] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:54:23,311] [logs/logTest-query_all_products_profit] [DEBUG]: {'product_id': '22222', 'profit': -1102.9699999999993, 'profit_rate': -0.09505117218604678, 'if_clearance': False, 'capital': 11603.96, 'current_amount': 10000.99, 'back_amout': 500.0}
+[2022-07-31 15:54:23,311] [logs/logTest-query_all_products_profit] [DEBUG]: {'product_id': '22222', 'profit': -1102.9699999999993, 'profit_rate': -0.09505117218604678, 'if_clearance': False, 'capital': 11603.96, 'current_amount': 10000.99, 'back_amout': 500.0}
+[2022-07-31 15:56:30,970] [logs/logTest-view_1] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 15:56:30,970] [logs/logTest-query_all_products_profit] [INFO]: 查询product_info表，获取类型所有产品productId数组
+[2022-07-31 15:56:30,970] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where state = 1;
+[2022-07-31 15:56:30,971] [logs/logTest-execute] [DEBUG]: (('11111',), ('22222',))
+[2022-07-31 15:56:30,971] [logs/logTest-query_all_products_profit] [INFO]: ['11111', '22222']
+[2022-07-31 15:56:30,971] [logs/logTest-query_all_products_profit] [INFO]: 遍历productId数组，调用query_product_profit
+[2022-07-31 15:56:30,971] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:56:30,971] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:56:30,972] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:56:30,972] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:56:30,972] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:56:30,972] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:56:30,974] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:56:30,974] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:56:30,974] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:56:30,974] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:56:30,974] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 15:56:30,974] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:56:30,974] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:56:30,974] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:56:30,974] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 15:56:30,975] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:56:30,975] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 15:56:30,975] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:56:30,975] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:56:30,975] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 15:56:30,975] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 15:56:30,975] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:56:30,975] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 15:56:30,976] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 15:56:30,976] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 15:56:30,976] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 15:56:30,976] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:56:30,976] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 15:56:30,976] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 15:56:30,976] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:56:30,977] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 15:56:30,977] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 15:56:30,977] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 15:56:30,977] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 15:56:30,977] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 15:56:30,977] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:56:30,978] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 15:56:30,978] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 15:56:30,978] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 15:56:30,978] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 15:57:10,674] [logs/logTest-add_product] [INFO]: {'productId': '33333', 'productName': 'qqqq', 'productType': 1, 'amount': 10000.0}
+[2022-07-31 15:57:10,675] [logs/logTest-execute] [DEBUG]: execute sql: insert into product_info(product_id, product_name, product_type, state) values('33333','qqqq',1,1);
+[2022-07-31 15:57:10,681] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:57:10,681] [logs/logTest-execute] [DEBUG]: execute sql: insert into transaction_record(product_id, product_name, trade_date, trade_amount, trade_type) values('33333', 'qqqq', current_time , '10000.000000', 1);
+[2022-07-31 15:57:10,688] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:57:10,688] [logs/logTest-execute] [DEBUG]: execute sql: insert into asset_info(product_id, product_name, current_amount, create_time) values('33333', 'qqqq', '10000.000000', current_time);
+[2022-07-31 15:57:10,694] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 15:57:10,694] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:57:10,694] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 15:57:10,694] [logs/logTest-add_product] [DEBUG]: ()
+[2022-07-31 16:03:24,481] [logs/logTest-view_3] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 16:03:55,705] [logs/logTest-view_3] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 16:03:55,705] [logs/logTest-view_3] [INFO]: 查询product_info表，获取所有产品类型数组
+[2022-07-31 16:03:55,705] [logs/logTest-execute] [DEBUG]: execute sql: select product_type from product_info and state = 1;
+[2022-07-31 16:03:55,709] [logs/logTest-execute] [ERROR]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and state = 1' at line 1")
+[2022-07-31 16:05:03,860] [logs/logTest-view_3] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 16:05:03,860] [logs/logTest-view_3] [INFO]: 查询product_info表，获取所有产品类型数组
+[2022-07-31 16:05:03,860] [logs/logTest-execute] [DEBUG]: execute sql: select product_type from product_info where state = 1;
+[2022-07-31 16:05:03,861] [logs/logTest-execute] [DEBUG]: ((1,), (2,), (1,))
+[2022-07-31 16:05:03,862] [logs/logTest-view_3] [INFO]: [1, 2, 1]
+[2022-07-31 16:05:03,862] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=1类型所有产品productId数组
+[2022-07-31 16:05:03,863] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 1 and state = 1;
+[2022-07-31 16:05:03,864] [logs/logTest-execute] [DEBUG]: (('11111',), ('33333',))
+[2022-07-31 16:05:03,864] [logs/logTest-query_product_type_profit] [INFO]: ['11111', '33333']
+[2022-07-31 16:05:03,864] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 16:05:03,864] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:05:03,865] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,866] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:05:03,866] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:05:03,867] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:05:03,867] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,867] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:05:03,867] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,868] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:05:03,868] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,869] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 16:05:03,869] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,869] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:05:03,869] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,870] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:05:03,870] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:05:03,870] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:05:03,870] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:05:03,870] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 16:05:03,870] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 16:05:03,870] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:05:03,871] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,872] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:05:03,872] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:05:03,872] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:05:03,872] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,872] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:05:03,873] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,873] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:05:03,873] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,873] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 16:05:03,873] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,873] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:05:03,873] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,874] [logs/logTest-execute] [DEBUG]: ((20000.0,),)
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_profit] [INFO]: 20000.0
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_profit] [INFO]: 20000.0
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_profit] [INFO]: -10000.0
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_profit] [INFO]: -0.5
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_type_profit] [INFO]: -10000.0
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_type_profit] [INFO]: 30000.0
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_type_profit] [INFO]: -10000.0
+[2022-07-31 16:05:03,874] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-31 16:05:03,874] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2 and state = 1;
+[2022-07-31 16:05:03,875] [logs/logTest-execute] [DEBUG]: (('22222',),)
+[2022-07-31 16:05:03,875] [logs/logTest-query_product_type_profit] [INFO]: ['22222']
+[2022-07-31 16:05:03,875] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 16:05:03,875] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:05:03,875] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,875] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 16:05:03,875] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 16:05:03,875] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:05:03,875] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,876] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:05:03,876] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,876] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:05:03,876] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,877] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 16:05:03,877] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 16:05:03,877] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:05:03,877] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,878] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 16:05:03,878] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 16:05:03,878] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 16:05:03,878] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:05:03,878] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 16:05:03,878] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 16:05:03,878] [logs/logTest-query_product_type_profit] [INFO]: -1102.9699999999993
+[2022-07-31 16:05:03,878] [logs/logTest-query_product_type_profit] [INFO]: 11603.96
+[2022-07-31 16:05:03,879] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 16:05:03,879] [logs/logTest-query_product_type_profit] [INFO]: -1102.9699999999993
+[2022-07-31 16:05:03,879] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=1类型所有产品productId数组
+[2022-07-31 16:05:03,879] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 1 and state = 1;
+[2022-07-31 16:05:03,881] [logs/logTest-execute] [DEBUG]: (('11111',), ('33333',))
+[2022-07-31 16:05:03,881] [logs/logTest-query_product_type_profit] [INFO]: ['11111', '33333']
+[2022-07-31 16:05:03,881] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 16:05:03,881] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:05:03,881] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,882] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:05:03,882] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:05:03,882] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:05:03,882] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,882] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:05:03,883] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,883] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:05:03,883] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,883] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 16:05:03,883] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,883] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:05:03,883] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,883] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:05:03,884] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:05:03,884] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:05:03,884] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:05:03,884] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 16:05:03,884] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 16:05:03,884] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:05:03,884] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,884] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:05:03,884] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:05:03,884] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:05:03,884] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:05:03,885] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:05:03,885] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,885] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:05:03,885] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,885] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 16:05:03,885] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:05:03,885] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:05:03,885] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:05:03,886] [logs/logTest-execute] [DEBUG]: ((20000.0,),)
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_profit] [INFO]: 20000.0
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_profit] [INFO]: 20000.0
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_profit] [INFO]: -10000.0
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_profit] [INFO]: -0.5
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_type_profit] [INFO]: -10000.0
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_type_profit] [INFO]: 30000.0
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 16:05:03,886] [logs/logTest-query_product_type_profit] [INFO]: -10000.0
+[2022-07-31 16:08:17,342] [logs/logTest-view_3] [INFO]: {'startTime': '2022-06-23 20:09:17', 'endTime': '2022-08-23 20:09:17'}
+[2022-07-31 16:08:17,343] [logs/logTest-view_3] [INFO]: 查询product_info表，获取所有产品类型数组
+[2022-07-31 16:08:17,343] [logs/logTest-execute] [DEBUG]: execute sql: select product_type from product_info where state = 1;
+[2022-07-31 16:08:17,344] [logs/logTest-execute] [DEBUG]: ((1,), (2,), (1,))
+[2022-07-31 16:08:17,344] [logs/logTest-view_3] [INFO]: [1, 2, 1]
+[2022-07-31 16:08:17,345] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=1类型所有产品productId数组
+[2022-07-31 16:08:17,345] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 1 and state = 1;
+[2022-07-31 16:08:17,345] [logs/logTest-execute] [DEBUG]: (('11111',), ('33333',))
+[2022-07-31 16:08:17,345] [logs/logTest-query_product_type_profit] [INFO]: ['11111', '33333']
+[2022-07-31 16:08:17,345] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 16:08:17,346] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:08:17,346] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,346] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:08:17,347] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:08:17,347] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:08:17,347] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,347] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:08:17,347] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,347] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:08:17,348] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,348] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 16:08:17,348] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,349] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:08:17,349] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,350] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:08:17,350] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:08:17,350] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:08:17,350] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:08:17,350] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 16:08:17,351] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 16:08:17,351] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:08:17,351] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,351] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:08:17,352] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:08:17,352] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:08:17,352] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,352] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:08:17,353] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,353] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:08:17,353] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,353] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 16:08:17,353] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,354] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:08:17,354] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,354] [logs/logTest-execute] [DEBUG]: ((20000.0,),)
+[2022-07-31 16:08:17,354] [logs/logTest-query_product_profit] [INFO]: 20000.0
+[2022-07-31 16:08:17,354] [logs/logTest-query_product_profit] [INFO]: 20000.0
+[2022-07-31 16:08:17,354] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:08:17,354] [logs/logTest-query_product_profit] [INFO]: -10000.0
+[2022-07-31 16:08:17,354] [logs/logTest-query_product_profit] [INFO]: -0.5
+[2022-07-31 16:08:17,355] [logs/logTest-query_product_type_profit] [INFO]: -10000.0
+[2022-07-31 16:08:17,355] [logs/logTest-query_product_type_profit] [INFO]: 30000.0
+[2022-07-31 16:08:17,355] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 16:08:17,355] [logs/logTest-query_product_type_profit] [INFO]: -10000.0
+[2022-07-31 16:08:17,355] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=2类型所有产品productId数组
+[2022-07-31 16:08:17,355] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 2 and state = 1;
+[2022-07-31 16:08:17,355] [logs/logTest-execute] [DEBUG]: (('22222',),)
+[2022-07-31 16:08:17,355] [logs/logTest-query_product_type_profit] [INFO]: ['22222']
+[2022-07-31 16:08:17,355] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 16:08:17,355] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:08:17,355] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,356] [logs/logTest-execute] [DEBUG]: ((10000.99,),)
+[2022-07-31 16:08:17,356] [logs/logTest-query_product_profit] [INFO]: 10000.99
+[2022-07-31 16:08:17,356] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:08:17,356] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '22222' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,356] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:08:17,356] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,357] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:08:17,357] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,357] [logs/logTest-execute] [DEBUG]: ((500.0,),)
+[2022-07-31 16:08:17,357] [logs/logTest-query_product_profit] [INFO]: 500.0
+[2022-07-31 16:08:17,357] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:08:17,357] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '22222' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,361] [logs/logTest-execute] [DEBUG]: ((11603.96,),)
+[2022-07-31 16:08:17,361] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 16:08:17,361] [logs/logTest-query_product_profit] [INFO]: 11603.96
+[2022-07-31 16:08:17,361] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:08:17,361] [logs/logTest-query_product_profit] [INFO]: -1102.9699999999993
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_profit] [INFO]: -0.09505117218604678
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_type_profit] [INFO]: -1102.9699999999993
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_type_profit] [INFO]: 11603.96
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_type_profit] [INFO]: -1102.9699999999993
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_type_profit] [INFO]: 查询product_info表，获取product_type=1类型所有产品productId数组
+[2022-07-31 16:08:17,362] [logs/logTest-execute] [DEBUG]: execute sql: select product_id from product_info where product_type = 1 and state = 1;
+[2022-07-31 16:08:17,362] [logs/logTest-execute] [DEBUG]: (('11111',), ('33333',))
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_type_profit] [INFO]: ['11111', '33333']
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_type_profit] [INFO]: 遍历productId数组，调用query_product_profit，计算profit/capital累积值
+[2022-07-31 16:08:17,362] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:08:17,362] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,363] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:08:17,363] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:08:17,363] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:08:17,363] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '11111' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,363] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:08:17,363] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,364] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:08:17,364] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,364] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 16:08:17,364] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,364] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:08:17,364] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '11111' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,365] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:08:17,365] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:08:17,365] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:08:17,365] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:08:17,365] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 16:08:17,365] [logs/logTest-query_product_profit] [INFO]: 0.0
+[2022-07-31 16:08:17,365] [logs/logTest-query_product_profit] [INFO]: 获取当前资产
+[2022-07-31 16:08:17,365] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time between '2022-06-23 20:09:17' and '2022-08-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,365] [logs/logTest-execute] [DEBUG]: ((10000.0,),)
+[2022-07-31 16:08:17,366] [logs/logTest-query_product_profit] [INFO]: 10000.0
+[2022-07-31 16:08:17,366] [logs/logTest-query_product_profit] [INFO]: 获取上次资产
+[2022-07-31 16:08:17,366] [logs/logTest-execute] [DEBUG]: execute sql: select current_amount from asset_info where product_id = '33333' and create_time < '2022-06-23 20:09:17' order by create_time desc limit 1;
+[2022-07-31 16:08:17,367] [logs/logTest-execute] [DEBUG]: ()
+[2022-07-31 16:08:17,367] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,367] [logs/logTest-query_product_profit] [INFO]: 获取已卖出金额
+[2022-07-31 16:08:17,367] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 2 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,368] [logs/logTest-execute] [DEBUG]: ((None,),)
+[2022-07-31 16:08:17,368] [logs/logTest-query_product_profit] [INFO]: 0
+[2022-07-31 16:08:17,368] [logs/logTest-query_product_profit] [INFO]: 获取成本
+[2022-07-31 16:08:17,368] [logs/logTest-execute] [DEBUG]: execute sql: select sum(trade_amount) from transaction_record where product_id = '33333' and trade_type = 1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:08:17,369] [logs/logTest-execute] [DEBUG]: ((20000.0,),)
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_profit] [INFO]: 20000.0
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_profit] [INFO]: 20000.0
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_profit] [INFO]: 计算收益和收益率
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_profit] [INFO]: -10000.0
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_profit] [INFO]: -0.5
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_type_profit] [INFO]: -10000.0
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_type_profit] [INFO]: 30000.0
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_type_profit] [INFO]: 计算收益率
+[2022-07-31 16:08:17,369] [logs/logTest-query_product_type_profit] [INFO]: -10000.0
+[2022-07-31 16:28:55,560] [logs/logTest-execute] [DEBUG]: execute sql: select * from transaction_record where trade_date between 2022-06-23 20:09:17 and 2022-08-23 20:09:17 and trade_type=1;
+[2022-07-31 16:28:55,570] [logs/logTest-execute] [ERROR]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20:09:17 and 2022-08-23 20:09:17 and trade_type=1' at line 1")
+[2022-07-31 16:29:40,241] [logs/logTest-execute] [DEBUG]: execute sql: select * from transaction_record where trade_type=1 and trade_date between 2022-06-23 20:09:17 and 2022-08-23 20:09:17;
+[2022-07-31 16:29:40,242] [logs/logTest-execute] [ERROR]: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20:09:17 and 2022-08-23 20:09:17' at line 1")
+[2022-07-31 16:30:19,060] [logs/logTest-execute] [DEBUG]: execute sql: select * from transaction_record where trade_type=1 and trade_date between '2022-06-23 20:09:17' and '2022-08-23 20:09:17';
+[2022-07-31 16:30:19,090] [logs/logTest-execute] [DEBUG]: ((4, '11111', 'qqqq', datetime.datetime(2022, 7, 23, 20, 9, 17), 10000.0, 1), (5, '22222', 'www', datetime.datetime(2022, 7, 23, 20, 28, 18), 10000.99, 1), (6, '22222', 'www', datetime.datetime(2022, 7, 23, 20, 38, 37), 1000.99, 1), (7, '22222', 'www', datetime.datetime(2022, 6, 23, 20, 9, 17), 100.99, 1), (8, '22222', 'www', datetime.datetime(2022, 7, 23, 20, 41, 56), 500.99, 1), (11, '33333', 'qqqq', datetime.datetime(2022, 7, 31, 15, 27, 46), 10000.0, 1), (13, '4444', 'qqqq', datetime.datetime(2022, 7, 31, 15, 35, 35), 10000.0, 1), (14, '55555', 'qqqq', datetime.datetime(2022, 7, 31, 15, 36, 18), 10000.0, 1), (15, '66666', 'qqqq', datetime.datetime(2022, 7, 31, 15, 45, 15), 10000.0, 1), (16, '77777', 'qqqq', datetime.datetime(2022, 7, 31, 15, 46, 40), 10000.0, 1), (17, '33333', 'qqqq', datetime.datetime(2022, 7, 31, 15, 57, 10), 10000.0, 1))
